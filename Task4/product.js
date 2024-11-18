@@ -1,15 +1,12 @@
-// Task 4 and 5: TypeScript Functionality
-// Function to calculate the total price of products
-var getTotalPrice = function (products) {
-    return products.reduce(function (total, product) { return total + product.price; }, 0);
+const getTotalPrice = (products) => {
+  return products.reduce(function (total, product) { return total + product.price; }, 0);
 };
-// Example usage
 var products = [
-    { name: "Tape", price: 10 },
-    { name: "Chair", price: 50 },
-    { name: "Lite", price: 20 },
-    { name: "Fan", price: 30 },
-    { name: "Lamp", price: 40 }
+  { name: "Tape", price: 10 },
+  { name: "Chair", price: 50 },
+  { name: "Lite", price: 20 },
+  { name: "Fan", price: 30 },
+  { name: "Lamp", price: 40 }
 ];
 var totalPrice = getTotalPrice(products);
 console.log("Total Price: $".concat(totalPrice));

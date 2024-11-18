@@ -1,6 +1,3 @@
-// Task 4 and 5: TypeScript Functionality
-
-// Interface for Product
 interface Product {
   name: string;
   price: number;
@@ -11,7 +8,6 @@ const getTotalPrice = (products: Product[]): number => {
   return products.reduce((total, product) => total + product.price, 0);
 };
 
-// Example usage
 const products: Product[] = [
   { name: "Tape", price: 10 },
   { name: "Chair", price: 50 },
